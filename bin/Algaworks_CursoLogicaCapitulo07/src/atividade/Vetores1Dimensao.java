@@ -1,6 +1,6 @@
 package atividade;
 
-import java.util.Scanner;
+
 
 public class Vetores1Dimensao {
 	public static void main(String[] args) {
