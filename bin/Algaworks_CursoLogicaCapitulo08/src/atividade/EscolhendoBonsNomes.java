@@ -1,22 +1,24 @@
 package atividade;
 
+import java.util.Scanner;
+
 public class EscolhendoBonsNomes {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		imprimirTraco();
 
-		String cursoEscolhido = receberCursoDoUsuario(scanner);
+		String cursoEscolhido = receberCursoDoUsuario(sc);
 
 		imprimirTraco();
 
-		String formaPagamentoEscolhida = receberFormaPagamentoDoUsuario(scanner);
+		String formaPagamentoEscolhida = receberFormaPagamentoDoUsuario(sc);
 
 		imprimirTraco();
 
 		imprimir("O curso escolhido foi " + cursoEscolhido + " e a forma de pagamento é " + formaPagamentoEscolhida);
 
-		scanner.close();
+		sc.close();
 	}
 
 	static String receberFormaPagamentoDoUsuario(Scanner scanner) {
